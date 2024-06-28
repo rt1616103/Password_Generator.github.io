@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <title>Password Generator</title>
+	    <link rel="stylesheet" href="style.css">
+	</head>
+    	<body>
+	    <section class="password-generator">
+		<h2 class="title">password generator</h2>
+		<header class="password-container">
+		    <div class="generated-password-box">
+		    	<h2 class="generated-password"></h2>
+		    </div>
+		    <button title="Copy Password Generated" class="copy-password">Copy</button>
+		</header>
+		<main class="form-container">
+		    <div class="form-container-header">
+			<h4 class="form-range-title">character length</h4>
+			<p class="form-range-number">10</p>
+		    </div>
+	    	    <form class="form">
+	    		<input type="range" id="passwordLengthRange" min="4" max="30" value="10"> 
+			<ul class="form-checkbox-container">
+			    <li class="form-checkbox-list">
+				<input type="checkbox" id="upperCaseCharactersButton">
+				<p class="form-checkbox-text">include uppercase letters</p>
+			    </li>
+
+			    <li class="form-checkbox-list">
+				<input type="checkbox" id="lowerCaseCharactersButton">
+				<p class="form-checkbox-text">include lowercase letters</p>
+			    </li>
+
+			    <li class="form-checkbox-list">
+				<input type="checkbox" id="numberCharactersButton">
+				<p class="form-checkbox-text">include numbers</p>
+			    </li>
+
+			    <li class="form-checkbox-list">
+				<input type="checkbox" id="symbolCharactersButton">
+				<p class="form-checkbox-text">include symbols</p>
+			    </li>
+			</ul>
+			<div class="password-strength-container">
+			    <h2 class="password-strength-title">strength</h2>
+			    <div class="password-strength-box">
+				<h2 class="password-strength"></h2>
+				<div class="strength-range">
+				    <div class="strength-range-box"></div>
+				    <div class="strength-range-box"></div>
+				    <div class="strength-range-box"></div>
+				    <div class="strength-range-box"></div>
+				</div>
+			    </div>
+			</div>
+	    	    </form>
+		    <button class="generate-button">generate</button>
+		</main>
+	    </section>
+	    <script src="script.js"></script>
+    	</body>
+    </html>
